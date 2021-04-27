@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?7kkyc2');
+            src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?7kkyc2') format('truetype'), url('fonts/icomoon.woff?7kkyc2') format('woff'), url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            height: 2000px;
+        }
+        
+        .head {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background-color: rgb(65, 62, 62);
+        }
+        
+        .head .backToZero {
+            cursor: pointer;
+            position: absolute;
+            text-align: center;
+            line-height: 40px;
+            left: 80px;
+            height: 40px;
+            color: aliceblue;
+            font-size: 14px;
+        }
+        
+        .login {
+            position: absolute;
+            right: 300px;
+            font-size: 14px;
+            cursor: pointer;
+            color: aliceblue;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .head .buyCar {
+            color: aliceblue;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            right: 100px;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(146, 143, 143);
+        }
+        
+        .head .buyCar:hover::after {
+            z-index: 10;
+            position: absolute;
+            left: -200px;
+            display: block;
+            content: '购物车中还没有东西噢';
+            width: 300px;
+            height: 70px;
+            background-color: #ccc;
+        }
+        
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 20%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        nav {
+            z-index: 3;
+            position: relative;
+            height: 120px;
+            width: 100%;
+            background-color: rgb(169, 183, 197);
+        }
+        
+        nav .bear {
+            top: 10px;
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: url(images/bear.png) no-repeat;
+            animation: bear .4s steps(8) infinite, move 2s linear forwards;
+        }
+        
+        nav .left {
+            cursor: pointer;
+            height: 120px;
+            list-style: none;
+            position: absolute;
+            left: 30%;
+        }
+        
+        nav .left li {
+            margin-left: 20px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 20px;
+            color: aliceblue;
+            float: left;
+        }
+        
+        .search {
+            position: absolute;
+            top: 30px;
+            left: 60%;
+        }
+        
+        nav .searchtxt {
+            outline-style: none;
+            font-size: 40px;
+            float: left;
+            height: 60px;
+            width: 350px;
+        }
+        
+        nav .searchbtn {
+            margin-top: 1px;
+            height: 58px;
+            float: left;
+            width: 60px;
+            background-color: #fff;
+        }
+        
+        nav .searchbtn:hover {
+            cursor: pointer;
+            background-color: orange;
+        }
+        
+        .main {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            background-color: rgb(104, 99, 99);
+        }
+        
+        .main .focus {
+            overflow: hidden;
+            position: absolute;
+            top: 30px;
+            left: 10%;
+            width: 500px;
+            height: 500px;
+        }
+        
+        .main .leftBlock {
+            position: absolute;
+            list-style: none;
+            width: 3000px;
+            height: 500px;
+            /* background-color: pink; */
+        }
+        
+        .main .leftBlock li {
+            width: 500px;
+            height: 500px;
+            float: left;
+            background: url('images/demo1.jpg') no-repeat;
+            background-size: 500px 500px;
+        }
+        
+        .arrow-l,
+        .arrow-r {
+            display: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            width: 24px;
+            height: 40px;
+            background: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            font-family: 'icomoon';
+            font-size: 18px;
+            z-index: 2;
+        }
+        
+        .arrow-r {
+            right: 0;
+        }
+    </style>
+    <script src="animate.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <header class='head'>
+        <span class="backToZero">返回主页</span>
+        <span class="login">登录</span>
+
+        <span class="buyCar">购物车</span>
+
+    </header>
+    <!-- 第二部分搜索部分 -->
+    <nav class="secondPart">
+        <div class="bear"></div>
+        <ul class="left">
+            <li class="allClaasses">全部商品分类</li>
+            <li class="server">服务</li>
+            <li class="community">社区</li>
+        </ul>
+        <div class="search">
+            <input type="search" class="searchtxt">
+            <div class="searchbtn"></div>
+        </div>
+    </nav>
+    <!-- 第三部分主要部分 -->
+    <section class="main">
+        <div class="focus">
+            <a href="javascript:;" class="arrow-l">
+            &lt;
+         </a>
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="arrow-r">  </a>
+            <!-- 核心的滚动区域 -->
+            <ul class="leftBlock">
+            </ul>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('load', function() {
+            var secondPart = document.querySelector('.secondPart')
+            window.addEventListener('scroll', function() {
+                    if (window.pageYOffset >= 40) {
+                        secondPart.style.top = 0 + 'px'
+                        secondPart.style.position = 'fixed'
+                    } else {
+                        secondPart.style.position = 'relative'
+
+
+                    }
+                })
+                //图片轮播图
+
+            var ul = document.querySelector('.leftBlock')
+            for (var i = 1; i <= 5; i++) {
+                var li = document.createElement('li')
+                li.setAttribute('index', i)
+                li.style.backgroundImage = 'url("images/demo' + i + '.jpg")'
+                ul.appendChild(li)
+            }
+            var li = document.createElement('li')
+            li.style.backgroundImage = 'url("images/demo' + 1 + '.jpg")'
+            ul.appendChild(li)
+            var arrow_l = document.querySelector('.arrow-l')
+            var arrow_r = document.querySelector('.arrow-r')
+            ul.addEventListener('mouseenter', function() {
+                    arrow_l.style.display = 'block'
+                    arrow_r.style.display = 'block'
+                })
+                //console.log(ul)
+            var focus = document.querySelector('.focus')
+            var num = 0
+            arrow_r.addEventListener('click', function() {
+
+                if (num == ul.children.length - 1) {
+                    ul.style.left = 0
+                    num = 0
+                }
+                num++
+                animate(ul, -num * focus.offsetWidth)
+            })
+            arrow_l.addEventListener('click', function() {
+
+                if (num == 0) {
+                    num = ul.children.length - 1
+                    ul.style.left = -num * focus.offsetWidth + 'px'
+
+                }
+                num--
+                animate(ul, -num * focus.offsetWidth)
+            })
+
+
+
+
+        })
+    </script>
+</body>
+
+</html>
