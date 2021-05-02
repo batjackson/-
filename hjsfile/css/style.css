@@ -1,0 +1,433 @@
+body{
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.page-top{
+  height: 40px;
+  padding: 0px;
+  margin: 0;
+  background-color: #333;
+}
+
+.contain{
+  padding: 0px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.page-top .top-lt,.top-gt{
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.top-gt{
+  float: right;
+}
+
+.login,.car-box{
+  position: relative;
+  display: inline-block;
+}
+
+.car-box{
+  width: 119px;
+  height: 40px;
+  text-align: center;
+  background-color: #424242;
+}
+
+.car-box img{
+  width: 20px;
+  height: 15px;
+  position: relative;
+  bottom: -2px;
+  margin-right:5px;
+}
+
+/* .car-box i{
+  width: 20px;
+  height: 15px;
+} */
+
+.car-box:hover{
+  background-color: white;
+}
+
+.car-box:hover img{
+  content:url(../img/购物车_.png);
+}
+
+.car-box:hover a{
+  color:#ff6700;
+}
+
+.car-box a:hover{
+  color:#ff6700 !important;
+}
+
+.page-top a{
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.page-top a:hover{
+  color: #fff;
+}
+
+.page-top .top-lt span{
+  padding: 0 3px;
+  color: #3f3f3f;
+}
+
+.download{
+  position: relative;
+  display: inline-block;
+}
+
+.download:hover .down-box{
+  /* display: block; */
+  height: auto;
+  overflow: visible;
+}
+
+.download:hover .down{
+  -webkit-animation: down_box 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.down-box{
+  position: absolute;
+  top: 31px;
+  left: -35px;
+  height: 0;  
+  /* margin-left: 590px; */
+  overflow: hidden;
+}
+
+@-webkit-keyframes down_box{
+  from{height: 0;}
+  to{height: 148px;}
+}
+
+.triangle{
+  width: 0px;
+  height: 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px transparent solid;
+  border-right: 8px transparent solid;
+  border-bottom: 9px #fff solid;
+}
+
+.down{
+  width: 125px;
+  height: 0px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #aaa;
+}
+
+.down img{
+  width: 83.5px;
+  height: 83.5px;
+  margin: 20px;
+}
+
+.down span{
+  position: relative;
+  top: -30px;
+  margin: 0 0 0 21px;
+  font-size: 13px;
+}
+
+.top-left{
+  background-color: #ff6700;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 34%;
+  text-align: center;
+  margin-top: 22px;
+  margin-left: 18px;
+}
+
+.top-left img{
+  margin-top: 10px;
+}
+
+.top-center{
+  display: inline-block;
+  position: relative;
+  margin-left: 120px;
+  top:-10px;
+}
+
+.top-center ul{
+  list-style-type: none;
+}
+
+.top-center li{
+  display:inline;
+  margin: 10px;
+}
+
+.top-center>ul li:hover{
+  color: #ff6700;
+  cursor: pointer;
+}
+
+.li-layout{
+  position: absolute;
+  left: -179px;
+  width: 1212px;
+  top: 80px;
+  height: 0px;
+  border: 0px solid;
+  overflow: hidden;
+  background-color: white;
+  z-index: 10;
+}
+
+.top-center a {
+  text-align: center;
+}
+
+.li-layout ul li{
+  display: inline-block;
+}
+
+.li-layout img {
+  width: 160px;
+  height: 110px;
+  border-right: 1px solid;
+}
+
+.li-layout .last-li{
+  border-right: 0px;
+}
+
+
+@-webkit-keyframes li_layout{
+  from{height: 0px; border: 0px;}
+  to{height: 240px; border: 1px solid;}
+}
+
+.top-center ul:hover+.li-layout{
+  -webkit-animation: li_layout 0.7s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.top-right{
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+  top: -10px;
+}
+
+.top-right input{
+  width: 240px;
+  margin: 0px;
+  height: 45px;
+  padding: 9px;
+}
+
+.top-right button{
+  position: relative;
+  top: 1px;
+  margin: 0;
+  left: -5px;
+  width: 50px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid rgb(133,133,133);
+}
+
+.main-center-one{
+  margin: 17px 20px;
+  width: 96%;
+  height: 460px;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.main-center-one .swiper{
+  width: 6144px;
+  height: 460px;
+  overflow: hidden;
+}
+
+.main-center-one .swiper ul{
+  padding: 0;
+  margin: 0;
+}
+
+.main-center-one .swiper-item{
+  display: inline-block;
+  float: left;
+}
+
+.main-center-one .swiper-item img{
+  width: 1228.8px;
+  height: 460px;
+}
+
+.swiper-index{
+  position: absolute;
+  width: auto;
+  height: auto;
+  bottom: 80px;
+  right: 80px;
+  background-color: #ff6700;
+}
+
+.swiper-index ul{
+  list-style-type: none;
+  padding: 0 13px;
+}
+
+.swiper-index ul li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rbga(0,0,0,0.4);
+}
+
+.swiper-index ul li:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.swiper .btn{
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  top: 50%;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.swiper .btn img{
+  width: 40px;
+  height: 40px;
+  margin: 14px 0px;
+}
+
+.swiper .next{
+  right: 30px;
+}
+
+.swiper .pre{
+  left: 263px;
+}
+
+.swiper .btn:hover{
+  background-color: rgba(128, 128, 128, 0.562);
+  cursor: pointer;
+}
+
+.swiper .pre:hover img{
+  content: url(../img/left_s.png);
+}
+
+.swiper .next:hover img{
+  content: url(../img/right_s.png);
+}
+
+.verlist{
+  position: absolute;
+  width: 243px;
+  color: #fff;
+  background-color: rgba(128, 128, 128, 0.26);
+}
+
+.verlist ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0px;
+}
+
+.verlist ul li{
+  /* background-color:aquamarine; */
+  padding: 11px 15px;
+}
+
+.verlist ul li:hover{
+  background-color: #ff6700;
+  cursor: pointer;
+}
+
+.verlist ul li span{
+  float: right;
+}
+
+.verlist .ver-layout{
+  position: absolute;
+  top: 0px;
+  left: 243px;
+  width: 970px;
+  height: 460px;
+  background-color: grey;
+  display: none;
+  z-index: 10;
+}
+
+.verlist ul:hover+.ver-layout{
+  display: block;
+}
+
+.main-center-two{
+  margin: 17px 20px;
+  width: 96%;
+  overflow: hidden;
+}
+
+.mainct-bto .bto-left{
+  position: relative;
+  display: inline-block;
+  height: 600px;
+  width: 232px;
+  margin-left: 1px;
+  background-color: white;
+}
+
+.mainct-bto .bto-left:hover{
+  -webkit-animation: bto_left 0.7s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bto_left{
+  from{}
+  to{
+    transform: translateY(-1%);
+    box-shadow: 0px 4px 8px;
+  }
+}
+
+.mainct-bto .bto-right{
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  height: 600px;
+  width: 970px;
+}
+
+.bto-right a{
+  position: relative;
+  display: inline-flex;
+  width: 195px;
+  height: 277px;
+  background-color: #ff6700;
+  margin: 0px 21px 21px 21px;
+}
+
+.bto-right a:hover{
+  -webkit-animation: bto_left 0.7s;
+  -webkit-animation-fill-mode: forwards;
+}
