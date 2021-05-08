@@ -105,6 +105,7 @@ body{
   left: -35px;
   height: 0;  
   /* margin-left: 590px; */
+  z-index: 9;
   overflow: hidden;
 }
 
@@ -256,8 +257,9 @@ body{
 }
 
 .main-center-one .swiper{
-  width: 6144px;
+  width: 7372.8px;
   height: 460px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -269,6 +271,41 @@ body{
 .main-center-one .swiper-item{
   display: inline-block;
   float: left;
+  /* -webkit-animation: circle linear 10s infinite; */
+  /* -webkit-animation-fill-mode:backwards; */
+}
+
+@-webkit-keyframes circle{
+  0%{
+    transform: translateX(0);
+  }
+  15%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-1228.8px);
+  }
+  40%{
+    transform: translateX(-1228.8px);
+  }
+  50%{
+    transform: translateX(-2457.6px);
+  }
+  65%{
+    transform: translateX(-2457.6px);
+  }
+  75%{
+    transform: translateX(-3686.4px);
+  }
+  90%{
+    transform: translateX(-3686.4px);
+  }
+  100%{
+    transform: translateX(-4915.2px);
+  }
+  /* 100%{
+    transform: translateX(-4915.2px);
+  } */
 }
 
 .main-center-one .swiper-item img{
@@ -282,7 +319,9 @@ body{
   height: auto;
   bottom: 80px;
   right: 80px;
-  background-color: #ff6700;
+  /* z-index: 9; */
+  /* box-shadow: 0px 4px 8px; */
+  /* background-color: #ff67 */
 }
 
 .swiper-index ul{
@@ -296,47 +335,55 @@ body{
   height: 10px;
   border-radius: 50%;
   border: 1px solid;
+  /* z-index: 9; */
   border-color: rgba(255, 255, 255, 0.3);
-  background-color: rbga(0,0,0,0.4);
+  background-color: rgba(255,255,255,0.1);
+}
+
+.liselected{
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .swiper-index ul li:hover{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 
-.swiper .btn{
+.main-center-one .btn{
   position: absolute;
   width: 41px;
   height: 69px;
   top: 50%;
+  transform: translateY(50%);
   color: #fff;
   border-radius: 2px;
+  z-index: 9;
 }
 
-.swiper .btn img{
+.main-center-one .btn img{
   width: 40px;
   height: 40px;
   margin: 14px 0px;
 }
 
-.swiper .next{
-  right: 30px;
+.main-center-one .next{
+  right: 50px;
 }
 
-.swiper .pre{
-  left: 263px;
+.main-center-one .pre{
+  left: 265px;
 }
 
-.swiper .btn:hover{
+.main-center-one .btn:hover{
   background-color: rgba(128, 128, 128, 0.562);
   cursor: pointer;
 }
 
-.swiper .pre:hover img{
+.main-center-one .pre:hover img{
   content: url(../img/left_s.png);
 }
 
-.swiper .next:hover img{
+.main-center-one .next:hover img{
   content: url(../img/right_s.png);
 }
 
@@ -345,6 +392,7 @@ body{
   width: 243px;
   color: #fff;
   background-color: rgba(128, 128, 128, 0.26);
+  z-index: 9;
 }
 
 .verlist ul{
