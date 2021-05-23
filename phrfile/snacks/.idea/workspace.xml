@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="snacks:war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -19,7 +24,17 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/pp/dao/impl/UserImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Maven/apache-maven-3.6.2/maven-repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36-sources.jar!/javax/servlet/Servlet.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/pp/dao/impl/ImImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Maven/apache-maven-3.6.2/maven-repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36-sources.jar!/javax/servlet/http/HttpServlet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../Maven/apache-maven-3.6.2/maven-repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36-sources.jar!/javax/servlet/GenericServlet.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -40,24 +55,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/pp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pp.test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\workspace\snacks\src\main\resources" />
       <recent name="C:\java\workspace\snacks\src\main\java\com\pp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java\workspace\snacks\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserService.test">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.5">
     <configuration name="Jdbcutils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pp.utils.Jdbcutils" />
       <module name="snacks" />
@@ -82,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserService.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snacks" />
       <extension name="coverage">
         <pattern>
@@ -91,16 +116,163 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pp.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.pp.service.impl.UserService" />
+      <option name="MAIN_CLASS_NAME" value="com.pp.service.impl.ImService" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceService.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pp.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pp.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.pp.service.impl.PriceService" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriceService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pp.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pp.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.pp.service.impl.PriceService" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testpicture.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snacks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pp.test" />
+      <option name="MAIN_CLASS_NAME" value="com.pp.test.testpicture" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 10.0.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.5" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/snacks/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="snacks:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/snacks" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7d2881e7-5674-4644-8763-7e098abbb978" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5885" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="snacks:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Jdbcutils" />
+      <item itemvalue="JUnit.PriceService.test" />
+      <item itemvalue="JUnit.PriceService.test1" />
+      <item itemvalue="JUnit.testpicture.test" />
+      <item itemvalue="Tomcat Server.Tomcat 10.0.5" />
+      <item itemvalue="JUnit.ImService.test1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserService.test" />
+        <item itemvalue="JUnit.ImService.test1" />
+        <item itemvalue="JUnit.testpicture.test" />
+        <item itemvalue="JUnit.PriceService.test" />
+        <item itemvalue="JUnit.PriceService.test1" />
         <item itemvalue="Application.Jdbcutils" />
       </list>
     </recent_temporary>
@@ -118,6 +290,18 @@
       <workItem from="1620207456903" duration="5151000" />
       <workItem from="1620217619139" duration="199000" />
       <workItem from="1620219032504" duration="1068000" />
+      <workItem from="1620377798704" duration="1497000" />
+      <workItem from="1620548801684" duration="570000" />
+      <workItem from="1620549757990" duration="1043000" />
+      <workItem from="1620551190372" duration="6196000" />
+      <workItem from="1620559886106" duration="59000" />
+      <workItem from="1620559984848" duration="2512000" />
+      <workItem from="1620578796800" duration="594000" />
+      <workItem from="1620614175933" duration="12480000" />
+      <workItem from="1620738422103" duration="1863000" />
+      <workItem from="1620872104799" duration="2232000" />
+      <workItem from="1621337364066" duration="60000" />
+      <workItem from="1621762746017" duration="4155000" />
     </task>
     <servers />
   </component>
