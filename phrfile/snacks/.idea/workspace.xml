@@ -96,17 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ImService.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snacks" />
       <extension name="coverage">
@@ -264,8 +253,8 @@
       <item itemvalue="JUnit.PriceService.test" />
       <item itemvalue="JUnit.PriceService.test1" />
       <item itemvalue="JUnit.testpicture.test" />
-      <item itemvalue="Tomcat Server.Tomcat 10.0.5" />
       <item itemvalue="JUnit.ImService.test1" />
+      <item itemvalue="Tomcat Server.Tomcat 10.0.5" />
     </list>
     <recent_temporary>
       <list>
@@ -302,6 +291,7 @@
       <workItem from="1620872104799" duration="2232000" />
       <workItem from="1621337364066" duration="60000" />
       <workItem from="1621762746017" duration="4155000" />
+      <workItem from="1621830670872" duration="607000" />
     </task>
     <servers />
   </component>

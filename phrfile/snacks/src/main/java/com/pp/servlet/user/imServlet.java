@@ -19,7 +19,7 @@ import java.util.List;
 public class imServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html;charset=utf-8");
+        resp.setContentType("text/javascript;charset=utf-8");
         Integer id= Integer.valueOf(req.getParameter("id"));
         System.out.println(id);
         ImService imService = new ImService();
